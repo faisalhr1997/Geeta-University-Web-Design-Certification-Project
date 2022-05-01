@@ -11,18 +11,14 @@
   <!-- css link  -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/hover.css">
-  <link rel="stylesheet" href="css/animate/animate.css">
-
-
-
 
 <body>
 
 
-  <!-- header menu  -->
-  <header>
-    <a href="#" class="logo"><img src="images/logo.png" alt="Geeta University" /></a>
-    <div class="toggle" onclick="toogleMenu"></div>
+  <!-- nav bar  -->
+  <nav>
+    <a href="#"><img src="images/logo.png" alt="img"/></a>
+
     <ul class="menu">
       <li><a href="#a" data-text="Home">Home</a></li>
       <li><a href="#b" data-text="About">About</a></li>
@@ -30,12 +26,11 @@
       <li><a href="#d" data-text="Students">Students</a></li>
       <li><a href="#e" data-text="Testimonial">Testimonial</a></li>
       <li><a href="#f" data-text="Contact">Contact</a></li>
-
     </ul>
-  </header>
+  </nav>
 
   <!-- 3d -->
-  <iframe src="3d/index.html" height="100%" width="100%" frameborder="0"></iframe>
+  <iframe src="3d/index.html"></iframe>
 
 
   <!-- hero banner  -->
@@ -74,7 +69,6 @@
           assets, citizens who are productive resources, citizens who lead the
           charge of innovation and citizens who are the living lessons of
           empowering education, empowering minds.
-
           <br />
           <br />
           This endeavor is aided by experienced faculty that inspires the
@@ -278,23 +272,13 @@
 
   <!-- javascript -->
 
-
-  <script src="js/script.js"></script>
-
   <script src="https://kit.fontawesome.com/014e8a1cbd.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
     window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
+      var scrolltrigger = document.querySelector("nav");
+      scrolltrigger.classList.toggle("sticky", window.scrollY > 0);
     });
-
-    //   function toogleMenu(params) {
-    //     var menuToggle = Document.querySelector(".toggle");
-    //     var menu = Document.querySelector(".menu");
-    //     menuToggle.classList.toggle("active");
-    //     menu.classList.toggle("active");
-    //   }
   </script>
 
 </body>
